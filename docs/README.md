@@ -9,6 +9,6 @@
   {% endfor %}
 </ul>
 
-# Welcome to my Bot Army
+# The Bot Army
 
 ## The Challenge
