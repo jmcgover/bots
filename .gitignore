@@ -106,3 +106,6 @@ venv.bak/
 # Jekyll ignores
 .sass-cache
 _site
+
+# macOS Crap
+.DS_Store
