@@ -109,3 +109,6 @@ _site
 
 # macOS Crap
 .DS_Store
+
+# Vim Crap
+.*.swp
