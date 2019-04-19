@@ -2,6 +2,7 @@
 
 import os
 import sys
+import errno
 
 import argparse
 
@@ -45,6 +46,14 @@ def main():
 
     # Open File
     LOGGER.info("Opening file at %s", args.filename)
+    doc_text = None
+    try:
+        with open(args.filename, 'r') as file:
+            LOGGER.info("Opened %s" % args.filename)
+            doc_text = file.read()
+    except IOError as e:
+        LOGGER.error("Failed to open %s: %s" % (args.filename, e))
+        return e.errno
 
     return 0
 
