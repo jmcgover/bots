@@ -11,6 +11,8 @@ from pprint import pprint
 
 import json
 
+#from nltk.tokenize import sent_tokenize
+
 # Logging
 import logging
 from logging import handlers
@@ -45,6 +47,7 @@ def get_arg_parser():
 def ngrams(doc, n=2):
     return ngrams
 
+
 def get_sents(doc):
 
     # Get the Harm To Whatever stuff as their own sentences
@@ -54,10 +57,11 @@ def get_sents(doc):
     doc_text = ' '.join(capture_inbetween.split())
 
     # Create a list of sentences
-    sent_split = re.split("((?<!(v|[A-Z]|[0-9]))(?<!(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Oct|Nov|Dec))[.?!~`])", doc_text)
+    sent_split = re.split("((?<!(v|[A-Z]|[0-9]))(?<!(Mr|Ms|MR|MS|Jr|jr|Dr|dr|No))(?<!Mrs)(?<!et al)(?<!(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Oct|Nov|Dec|Doc))[.?!`])", doc_text)
+    #sent_split = sent_tokenize(doc_text)
 
     # Filter out the empty garbage items
-    non_empty = [s.strip() for s in sent_split if s];
+    non_empty = [s.strip() for s in sent_split if s and len(s) > 3];
 
     # Append the punctuation to the previous sentence
     punct_set = set(".?!")
@@ -69,9 +73,10 @@ def get_sents(doc):
         s = non_empty[i]
         if s == "`":
             continue
-        if s in punct_set:
+        if s[0] in punct_set:
             sents[-1] += s
             continue
+        #s = s.replace("!","")
         sents.append(s)
     sents = [s.strip() for s in sents if len(s) > 3 or "bad" in s.lower()];
     #sents = [s.strip() for s in sents if len(s)];
