@@ -27,6 +27,7 @@ LOGGER.addHandler(FH)
 
 DEFAULT_FILENAME="MuellerReport.txt"
 DEFAULT_OUTPUT="cbdq.json"
+DEFAULT_REPLIES="replies.json"
 DESCRIPTION = """Parses the MuellerReport file into the appropriate data structures to enable text generation."""
 def get_arg_parser():
     parser = argparse.ArgumentParser(prog=sys.argv[0], description=DESCRIPTION)
@@ -34,13 +35,16 @@ def get_arg_parser():
             help = "file to parse (default is %s)" % DEFAULT_FILENAME)
     parser.add_argument("-o", "--output",
             help = "file to save the Cheap Bots Done Quick JSON to (default is %s)" % DEFAULT_OUTPUT)
+    parser.add_argument("-r", "--replies",
+            help = "file to save the Cheap Bots Done Quick JSON for replies to (default is %s)" % DEFAULT_REPLIES)
     parser.add_argument("-i", "--info",
             help = "set console logging output to INFO")
     parser.add_argument("-d", "--debug",
             help = "set console logging output to DEBUG")
     parser.set_defaults(
             filename = DEFAULT_FILENAME,
-            output = DEFAULT_OUTPUT
+            output = DEFAULT_OUTPUT,
+            replies = DEFAULT_REPLIES
             )
     return parser
 
@@ -85,8 +89,29 @@ def get_sents(doc):
     #sents = [s.strip() for s in sents if len(s)];
     return sents
 
-def cbdq_json_dict(sents):
-    return {"origin" : sents}
+def filter_replies(sents):
+    replies = []
+    for s in sents:
+        if 'BAD' in s:
+            replies.append(s)
+            continue
+        if 'harm' in s.lower():
+            replies.append(s)
+            continue
+        if '?' in s:
+            replies.append(s)
+            continue
+        if '...' in s:
+            replies.append(s)
+            continue
+    return replies
+
+
+def replies_json_dict(sents):
+    return {'.' : '#replies#'}
+
+def tracery_json_dict(sents):
+    return {"origin" : sents, "replies" : filter_replies(sents)}
 
 def main():
     parser = get_arg_parser()
@@ -127,11 +152,18 @@ def main():
 
     # Format sents for CPDQ
     LOGGER.info("Converting to Cheap Bots Done Quick JSON format")
-    cbdq_dict = cbdq_json_dict(sents)
+    tracery_dict = tracery_json_dict(sents)
     LOGGER.info("Saving JSON to %s" % args.output)
     try:
         with open(args.output, 'w') as file:
-            json.dump(cbdq_dict, file, indent=4)
+            json.dump(tracery_dict, file, indent=4)
+    except IOError as e:
+        LOGGER.error("Failed to save to %s: %s" % (args.output, e))
+        return e.errno
+    LOGGER.info("Saving replies JSON to %s" % args.replies)
+    try:
+        with open(args.replies, 'w') as file:
+            json.dump(replies_json_dict(sents), file, indent=4)
     except IOError as e:
         LOGGER.error("Failed to save to %s: %s" % (args.output, e))
         return e.errno
