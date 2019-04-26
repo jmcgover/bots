@@ -51,17 +51,19 @@ def ngrams(doc, n=2):
 def get_sents(doc):
 
     # Get the Harm To Whatever stuff as their own sentences
-    capture_inbetween = re.sub(r"(?<!\.)\n{2,}", "` ", doc)
+    capture_inbetween = re.sub(r"(?<!\.)\n{2,}", " ` ", doc)
 
     # Remove extra whitespace within
     doc_text = ' '.join(capture_inbetween.split())
 
     # Create a list of sentences
-    sent_split = re.split("((?<!(v|[A-Z]|[0-9]))(?<!(Mr|Ms|MR|MS|Jr|jr|Dr|dr|No))(?<!Mrs)(?<!et al)(?<!(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Oct|Nov|Dec|Doc))[.?!`])", doc_text)
+    sent_split = re.split("((?<!(v|[A-Z]|[0-9]))(?<!(Mr|Ms|MR|MS|Jr|jr|Dr|dr|No))(?<!Mrs)(?<!et al)(?<!(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Oct|Nov|Dec|Doc))[.?!`])(\"?)", doc_text)
     #sent_split = sent_tokenize(doc_text)
 
     # Filter out the empty garbage items
-    non_empty = [s.strip() for s in sent_split if s and len(s) > 3];
+    non_empty = [s.strip() for s in sent_split if s and len(s.strip()) > 0];
+
+    print(non_empty)
 
     # Append the punctuation to the previous sentence
     punct_set = set(".?!")
@@ -71,9 +73,10 @@ def get_sents(doc):
     sents.append(non_empty[0])
     for i in range(1,len(non_empty)):
         s = non_empty[i]
+        assert(len(s) > 0)
         if s == "`":
             continue
-        if s[0] in punct_set:
+        if s[0] in punct_set or s == '"':
             sents[-1] += s
             continue
         #s = s.replace("!","")
