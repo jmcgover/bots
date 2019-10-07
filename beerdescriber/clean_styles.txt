@@ -33,7 +33,8 @@ Double Brown Ale
 Imperial Brown Ale
 Burton Ale
 California Common
-Chilli / Chile Beer
+Chilli Beer
+Chile Beer
 Dry Cider
 Herbed Cider
 Spiced Cider
@@ -50,7 +51,8 @@ Dark Ale
 Dunkelweizen
 English Bitter
 English Mild Ale
-Extra Special / Strong Bitter
+Extra Special Bitter
+Extra Strong Bitter
 Sahti Farmhouse Ale
 Saison Farmhouse Ale
 Festbier
@@ -73,8 +75,8 @@ Leicht Hefeweizen
 Honey Beer
 American IPA
 Belgian IPA
-Black / Cascadian Dark Ale IPA
-Black / Cascadian Dark Ale IPA
+Black IPA
+Cascadian Dark Ale IPA
 Brut IPA
 English IPA
 Farmhouse IPA
@@ -98,7 +100,8 @@ Triple IPA
 Triple New England IPA
 White IPA
 Italian Grape Ale
-Kellerbier / Zwickelbier
+Kellerbier
+Zwickelbier
 Kentucky Common
 Kombucha
 Kristallweizen
@@ -164,7 +167,8 @@ Coffee Porter
 English Porter
 Double Porter
 Imperial Porter
-Pumpkin / Yam Beer
+Pumpkin
+Yam Beer
 Rauchbier
 Red Ale
 American Amber Red Ale
@@ -176,10 +180,12 @@ Root Beer
 Rye Beer
 Rye Wine
 Schwarzbier
-Scotch Ale / Wee Heavy
+Wee Heavy
+Scotch Ale
 Scottish Ale
 Scottish Export Ale
-Shandy / Radler
+Radler
+Shandy
 Smoked Beer
 Berliner Weisse Sour
 Flanders Oud Bruin Sour
@@ -188,7 +194,8 @@ Fruited Sour
 Gose Sour
 Fruited Sour
 Specialty Grain
-Spiced / Herbed Beer
+Spiced Beer
+Herbed Beer
 Steinbier
 American Stout
 American Imperial Stout
