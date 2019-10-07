@@ -2,42 +2,48 @@ Adambier
 Altbier
 American Wild Ale
 Australian Sparkling Ale
-Barleywine - American
-Barleywine - English
-Barleywine - Other
+American Barleywine
+English Barleywine
 Belgian Blonde
 Belgian Dubbel
 Belgian Quadrupel
 Belgian Strong Dark Ale
 Belgian Strong Golden Ale
 Belgian Tripel
-Bière de Champagne / Bière Brut
+Bière de Champagne
+Bière Brut
 Bière de Garde
 Bière de Mars
 Black & Tan
 Blonde Ale
-Bock - Doppelbock
-Bock - Eisbock (Traditional)
-Bock - Hell / Maibock / Lentebock
-Bock - Single / Traditional
-Bock - Weizenbock
+Doppelbock
+Eisbock
+Traditional Eisbock
+Hell Bock
+Maibock Bock
+Lentebock Bock
+Single Bock
+Traditional Bock
+Weizenbock
 Brett Beer
-Brown Ale - American
-Brown Ale - Belgian
-Brown Ale - English
-Brown Ale - Imperial / Double
-Brown Ale - Other
+American Brown Ale
+Belgian Brown Ale
+English Brown Ale
+Double Brown Ale
+Imperial Brown Ale
 Burton Ale
 California Common
 Chilli / Chile Beer
-Cider - Dry
-Cider - Herbed / Spiced / Hopped
-Cider - Ice / Applewine
-Cider - Other Fruit
-Cider - Perry
-Cider - Rosé
-Cider - Sweet
-Cider - Traditional
+Dry Cider
+Herbed Cider
+Spiced Cider
+Hopped Cider
+Applewine Cider
+Ice Cider
+Perry Cider
+Rosé Cider
+Sweet Cider
+Traditional Cider
 Cream Ale
 Dampfbier
 Dark Ale
@@ -45,9 +51,8 @@ Dunkelweizen
 English Bitter
 English Mild Ale
 Extra Special / Strong Bitter
-Farmhouse Ale - Other
-Farmhouse Ale - Sahti
-Farmhouse Ale - Saison
+Sahti Farmhouse Ale
+Saison Farmhouse Ale
 Festbier
 Freeze-distilled Beer
 Fruit Beer
@@ -56,33 +61,42 @@ Gluten-Free
 Golden Ale
 Graff
 Grisette
-Gruit / Ancient Herbed Ale
-Grätzer / Grodziskie
+Gruit
+Ancient Herbed Ale
+Grätzer
+Grodziskie
 Happoshu
 Hard Seltzer
 Hefeweizen
-Hefeweizen Light / Leicht
+Light Hefeweizen
+Leicht Hefeweizen
 Honey Beer
-IPA - American
-IPA - Belgian
-IPA - Black / Cascadian Dark Ale
-IPA - Brut
-IPA - English
-IPA - Farmhouse
-IPA - Imperial / Double
-IPA - Imperial / Double Black
-IPA - Imperial / Double Milkshake
-IPA - Imperial / Double New England
-IPA - International
-IPA - Milkshake
-IPA - New England
-IPA - Red
-IPA - Rye
-IPA - Session / India Session Ale
-IPA - Sour
-IPA - Triple
-IPA - Triple New England
-IPA - White
+American IPA
+Belgian IPA
+Black / Cascadian Dark Ale IPA
+Black / Cascadian Dark Ale IPA
+Brut IPA
+English IPA
+Farmhouse IPA
+Double IPA
+Imperial IPA
+Double Black IPA
+Imperial Black IPA
+Double Milkshake IPA
+Imperial Milkshake IPA
+Double New England IPA
+Imperial New England IPA
+International IPA
+Milkshake IPA
+New England IPA
+Red IPA
+Rye IPA
+India Session Ale
+Session IPA
+Sour IPA
+Triple IPA
+Triple New England IPA
+White IPA
 Italian Grape Ale
 Kellerbier / Zwickelbier
 Kentucky Common
@@ -90,70 +104,73 @@ Kombucha
 Kristallweizen
 Kvass
 Kölsch
-Lager - Amber
-Lager - American
-Lager - American Amber / Red
-Lager - American Light
-Lager - Dark
-Lager - Dortmunder / Export
-Lager - Euro Dark
-Lager - Euro Pale
-Lager - Euro Strong
-Lager - Helles
-Lager - IPL (India Pale Lager)
-Lager - Japanese Rice
-Lager - Munich Dunkel
-Lager - Pale
-Lager - Red
-Lager - Vienna
-Lager - Winter
-Lambic - Faro
-Lambic - Framboise
-Lambic - Fruit
-Lambic - Gueuze
-Lambic - Kriek
-Lambic - Traditional
+Amber Lager
+American Lager
+Red Lager
+American Amber
+American Light Lager
+Dark Lager
+Dortmunder
+Export Lager
+Euro Dark Lager
+Euro Pale Lager
+Euro Strong Lager
+Helles Lager
+IPL (India Pale Lager) Lager
+Japanese Rice Lager
+Munich Dunkel Lager
+Pale Lager
+Red Lager
+Vienna Lager
+Winter Lager
+Faro Lambic
+Framboise Lambic
+Fruit Lambic
+Gueuze Lambic
+Kriek Lambic
+Traditional Lambic
 Lichtenhainer
 Malt Beer
 Malt Liquor 
-Mead - Braggot
-Mead - Cyser
-Mead - Melomel
-Mead - Metheglin
-Mead - Other
-Mead - Pyment
-Mead - Traditional
+Braggot Mead
+Cyser Mead
+Melomel Mead
+Metheglin Mead
+Pyment Mead
+Traditional Mead
+Mead
 Mumme
 Märzen
 Non-Alcoholic Beer
 Old Ale
-Other
-Pale Ale - American
-Pale Ale - Australian
-Pale Ale - Belgian
-Pale Ale - English
-Pale Ale - International
-Pale Ale - Milkshake
-Pale Ale - New England
-Pale Ale - New Zealand
+American Pale Ale
+Australian Pale Ale
+Belgian Pale Ale
+English Pale Ale
+International Pale Ale
+Milkshake Pale Ale
+New England Pale Ale
+New Zealand Pale Ale
 Patersbier
-Pilsner - Czech
-Pilsner - German
-Pilsner - Imperial / Double
-Pilsner - Other
-Porter - American
-Porter - Baltic
-Porter - Baltic Imperial / Double
-Porter - Coffee
-Porter - English
-Porter - Imperial / Double
-Porter - Other
+Czech Pilsner
+German Pilsner
+Imperial Pilsner
+Double Pilsner
+American Porter
+Baltic Porter
+Baltic Double Porter
+Baltic Imperial Porter
+Coffee Porter
+English Porter
+Double Porter
+Imperial Porter
 Pumpkin / Yam Beer
 Rauchbier
-Red Ale - American Amber / Red
-Red Ale - Imperial / Double
-Red Ale - Irish
-Red Ale - Other
+Red Ale
+American Amber Red Ale
+Imperial Red Ale
+Double Red Ale
+Irish Red Ale
 Roggenbier
 Root Beer
 Rye Beer
@@ -164,40 +181,43 @@ Scottish Ale
 Scottish Export Ale
 Shandy / Radler
 Smoked Beer
-Sour - Berliner Weisse
-Sour - Flanders Oud Bruin
-Sour - Flanders Red Ale
-Sour - Fruited
-Sour - Gose
-Sour - Gose - Fruited
-Sour - Other
+Berliner Weisse Sour
+Flanders Oud Bruin Sour
+Flanders Red Ale Sour
+Fruited Sour
+Gose Sour
+Fruited Sour
 Specialty Grain
 Spiced / Herbed Beer
 Steinbier
-Stout - American
-Stout - American Imperial / Double
-Stout - Coffee
-Stout - English
-Stout - Foreign / Export
-Stout - Imperial / Double
-Stout - Imperial / Double Milk
-Stout - Imperial / Double Oatmeal
-Stout - Imperial / Double White
-Stout - Irish Dry
-Stout - Milk / Sweet
-Stout - Oatmeal
-Stout - Other
-Stout - Oyster
-Stout - Pastry
-Stout - Russian Imperial
-Stout - White
-Strong Ale - American
-Strong Ale - English
-Strong Ale - Other
+American Stout
+American Imperial Stout
+American Double Stout
+Coffee Stout
+English Stout
+Foreign Stout
+Export Stout
+Imperial Stout
+Double Stout
+Imperial Stout
+Double Milk Stout
+Imperial Stout
+Double Oatmeal Stout
+Imperial Stout
+Double White Stout
+Irish Dry Stout
+Milk Stout
+Sweet Stout
+Oatmeal Stout
+Oyster Stout
+Pastry Stout
+Russian Imperial Stout
+White Stout
+American Strong Ale
+English Strong Ale
 Table Beer
 Traditional Ale
-Wheat Beer - American Pale Wheat
-Wheat Beer - Other
+American Pale Wheat Beer
 Wheat Wine
 Winter Ale
 Winter Warmer
