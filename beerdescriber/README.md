@@ -2,12 +2,19 @@
 
 http://twitter.com/beerdescriber
 
-## Cleanup
+## Usage
+
+```bash
+./make_cbdq.py clean_styles.txt fruit_veg_flavors.txt weight.txt aged.txt flowers_aromatics.txt
+```
+
+
+## Cleanup Rules
 - Just move the style to the end
 - Anything with a slash is doubled and
-	simplified
+	correctly simplified
 
-## Soruces
+## Sources
 - Beer: https://untappd.com/beer/new_beer
 - Flavors: https://northwesternextract.com/flavor-list/
 - Aromatics:https://github.com/dariusk/corpora/blob/master/data/foods/herbs_n_spices.json

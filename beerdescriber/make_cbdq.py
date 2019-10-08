@@ -34,7 +34,12 @@ def get_arg_parser():
             metavar = "<aromatics.txt>",
             default = None,
             dest = "aromatics_filename",
-            help = "path to line delimited file of aged designators")
+            help = "path to line delimited file of aromatics")
+    parser.add_argument(
+            metavar = "<bad_beers.txt>",
+            default = None,
+            dest = "bad_beers_filename",
+            help = "path to line delimited file of bad beers")
     return parser
 
 def titlecase_array(array):
@@ -67,20 +72,36 @@ def main():
     with open(args.aromatics_filename, 'r') as file:
         aromatics = file_to_arr(file)
 
+    bad_beers = []
+    with open(args.bad_beers_filename, 'r') as file:
+        bad_beers = file_to_arr(file)
+
     flavors = titlecase_array(flavors)
     aromatics = titlecase_array(aromatics)
 
     cbdq = {}
     cbdq["origin"] = [
             "#beer#",
+            "#beer#",
+            "#beer#",
+            "#beer#",
+            "#beer#",
             "#beer# with notes of #notes#",
+            "#beer# blended with #bad beers#",
             ]
     cbdq["beer"] = [
             "#weights# #aged# #flavors# #styles#",
             "#weights# #flavors# #styles#",
             "#flavors# #styles#",
+            "#flavors# #styles#",
+            "#flavors# #styles#",
             ]
     cbdq["notes"] = [
+            "#aromatics#",
+            "#aromatics#",
+            "#aromatics#",
+            "#aromatics#",
+            "#aromatics#",
             "#aromatics#",
             "#aromatics# and #aromatics#",
             "#aromatics#, #aromatics#, and #aromatics#",
@@ -90,6 +111,7 @@ def main():
     cbdq["weights"] = weights
     cbdq["aged"] = aged
     cbdq["aromatics"] = aromatics
+    cbdq["bad beers"] = bad_beers
 
     with open("cbdq.json", 'w') as outfile:
         json.dump(cbdq, outfile, sort_keys=True, indent=4)
