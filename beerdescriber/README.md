@@ -10,6 +10,9 @@ http://twitter.com/beerdescriber
 ## Soruces
 - Beer: https://untappd.com/beer/new_beer
 - Flavors: https://northwesternextract.com/flavor-list/
+- Aromatics:https://github.com/dariusk/corpora/blob/master/data/foods/herbs_n_spices.json
+- Vegetables: https://github.com/dariusk/corpora/blob/master/data/foods/vegetables.json
+- Scotches: https://github.com/dariusk/corpora/blob/master/data/foods/scotch_whiskey.json
 
 ## Notes
 
