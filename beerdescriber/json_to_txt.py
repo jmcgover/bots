@@ -7,11 +7,11 @@ import json
 
 def main():
     data = None
-    with open("scotches.json", 'r') as file:
+    with open("iba_cocktails.json", 'r') as file:
         data = json.load(file)
     list = []
-    list.extend(data["scotches"])
-    with open("whiskey.txt", 'w') as outfile:
+    list.extend(data["cocktails"])
+    with open("cocktails.txt", 'w') as outfile:
         for i in list:
             print(i, file=outfile)
     return 0
