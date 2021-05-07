@@ -8,4 +8,3 @@ Relevant tweets:
 * https://twitter.com/2600/status/1118940820021944321
 * https://twitter.com/2600/status/1118948983509012480
 * https://twitter.com/2600/status/1118949154821156867
-* 
